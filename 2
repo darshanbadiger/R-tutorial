@@ -1,0 +1,121 @@
+
+a=200
+if(a==200){
+  print("good morning")
+}
+
+if(1==0){
+  print("True condition")
+}else
+{
+  print("false condition")
+}
+
+if(1==1){
+  print("True condition")
+}else
+{
+  print("false condition")
+}
+
+#if else statement
+x<-1:10
+ifelse(x<5|x<8,x,0)
+
+x<-1:10
+ifelse(x>=6,x,0)
+
+#ifelse function
+a=c(1,2,3,4)
+ifelse(a%%2==0,"even","odd")
+
+#Find largest number
+a=20
+b=3
+ifelse(a>b,"a is max","b is max")
+
+#nested if else statements
+
+x<-c("What","is","truth")
+if("Truth" %in% x){
+  print("Truth is found the first time")
+}elseif("truth" %in% x){
+  print("truth is found the second time")
+}else{
+  print("No truth found")
+}
+
+#for loop
+
+vec<-c(1,2,3,4)
+for(val in vec){
+  print(val)
+}
+
+v<-LETTERS[1:4]
+for(i in v){
+  print(i)
+}
+
+#while loop
+v<-c("Hello","While loop")
+cnt<-2
+while(cnt<7){
+  print(v)
+  cnt=cnt+1
+}
+
+z<-0
+while(z<10){
+  z<-z+2
+  print(z)
+}
+
+#break statement
+num<-1:5
+for(val in num){
+  if(val==3){
+    break
+  }
+  print(val)
+}
+
+#Next statement
+num<-1:5
+for(val in num){
+  if(val==3){
+  next
+  }
+  print(val)
+}
+
+#switch function
+color="green"
+switch(color,"red"={print("apple")},"yellow"={print("Banana")},"green"={print("grapes")})
+
+#scan function
+x<-scan()
+
+#to read charector
+y<-scan(what="")
+
+#create sequence of numbers from 32 to 44
+print(seq(32,44))
+
+#find the mean of numbers from 25 to 82
+print(mean(25:82))
+
+#find the sum of numbers from 5 to 10
+print(sum(5:10))
+
+#create function to print squares of numbers in sequence
+new.function<-function(a){
+  for(i in a){
+    b<-i^2
+    print(b)
+  }
+}
+new.function(6)
+
+
+
