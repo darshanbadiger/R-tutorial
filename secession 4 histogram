@@ -78,6 +78,20 @@ qqnorm(beaver2$temp[beaver2$activ==1], main="Active")
 qqline( beaver2$temp[beaver2$activ==1] )
 
 ls() #list d all files...
+ls(pattern="F") 
+
+x <- c(32,64,96,118,126,144,152.5,158) # predictor
+y<-c(99.5,104.8,108.5,100,86,64,35.3,15) #response 		variable usually on the y-axis
+plot(x,y,pch=19)
+
+plot(1:12, col=1:12, main="Default 9 Colors", ylab="",xlab="", pch=19, cex=3) 
+
+
+colors()[1:10]
+length(colors())
+
+plot(1:12, col=1:12, main="Default 9 Colors", ylab="",xlab="", pch=19, cex=3) 
+text(1:12, c(1:12)+.75, c(1:8, 1:4))
 
 
 
